@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniiOS - iOS 签名应用安装库</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 自定义配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0071e3',
+                        secondary: '#34c759',
+                        dark: '#1d1d1f',
+                        light: '#f5f5f7'
+                    },
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .card-shadow {
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            }
+            .install-btn {
+                @apply bg-primary text-white py-2 px-5 rounded-full font-medium transition-all hover:bg-primary/90 active:scale-95;
+            }
+        }
+    </style>
+</head>
+<body class="bg-light text-dark min-h-screen">
+    <!-- 头部 -->
+    <header class="py-6 px-4 text-center">
+        <h1 class="text-[clamp(1.8rem,5vw,2.5rem)] font-bold text-primary">MiniiOS 应用安装库</h1>
+        <p class="mt-2 text-gray-600">已签名IPA应用 | 一键安装 | 支持iOS 17+</p>
+    </header>
+
+    <!-- 应用卡片容器 -->
+    <main class="max-w-6xl mx-auto px-4 pb-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 1. Forward -->
+            <div class="bg-white rounded-2xl p-6 card-shadow">
+                <h2 class="text-xl font-bold">Forward</h2>
+                <div class="mt-3 space-y-2 text-sm text-gray-600">
+                    <p>📦 版本：1.3.14</p>
+                    <p>📏 大小：111MB+</p>
+                    <p>🆔 BundleID：flux.inchmade.app</p>
+                </div>
+                <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/MiniiOS/MiniiOS.github.io/main/plist/Forward.plist" class="install-btn block mt-4 text-center">一键安装</a>
+            </div>
+
+            <!-- 2. MiraPlay -->
+            <div class="bg-white rounded-2xl p-6 card-shadow">
+                <h2 class="text-xl font-bold">MiraPlay</h2>
+                <div class="mt-3 space-y-2 text-sm text-gray-600">
+                    <p>📦 版本：1.4</p>
+                    <p>📏 大小：38MB+</p>
+                    <p>🆔 BundleID：com.gendago.catpaw</p>
+                </div>
+                <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/MiniiOS/MiniiOS.github.io/main/plist/MiraPlay.plist" class="install-btn block mt-4 text-center">一键安装</a>
+            </div>
+
+            <!-- 3. 酷狗概念版 -->
+            <div class="bg-white rounded-2xl p-6 card-shadow">
+                <h2 class="text-xl font-bold">酷狗概念版</h2>
+                <div class="mt-3 space-y-2 text-sm text-gray-600">
+                    <p>📦 版本：2.5.5</p>
+                    <p>📏 大小：83MB+</p>
+                    <p>🆔 BundleID：com.kugou.kgyouth</p>
+                </div>
+                <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/MiniiOS/MiniiOS.github.io/main/plist/酷狗概念版.plist" class="install-btn block mt-4 text-center">一键安装</a>
+            </div>
+
+            <!-- 4. XMusic -->
+            <div class="bg-white rounded-2xl p-6 card-shadow">
+                <h2 class="text-xl font-bold">XMusic</h2>
+                <div class="mt-3 space-y-2 text-sm text-gray-600">
+                    <p>📦 版本：1.2</p>
+                    <p>📏 大小：4MB+</p>
+                    <p>🆔 BundleID：org.galio.XMusic</p>
+                </div>
+                <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/MiniiOS/MiniiOS.github.io/main/plist/XMusic.plist" class="install-btn block mt-4 text-center">一键安装</a>
+            </div>
+
+            <!-- 5. 动漫共和国 -->
+            <div class="bg-white rounded-2xl p-6 card-shadow">
+                <h2 class="text-xl font-bold">动漫共和国</h2>
+                <div class="mt-3 space-y-2 text-sm text-gray-600">
+                    <p>📦 版本：1.0.0</p>
+                    <p>📏 大小：38MB+</p>
+                    <p>🆔 BundleID：com.example.dongmangongheguo</p>
+                </div>
+                <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/MiniiOS/MiniiOS.github.io/main/plist/动漫共和国.plist" class="install-btn block mt-4 text-center">一键安装</a>
+            </div>
+
+            <!-- 6. MangaBox -->
+            <div class="bg-white rounded-2xl p-6 card-shadow">
+                <h2 class="text-xl font-bold">MangaBox</h2>
+                <div class="mt-3 space-y-2 text-sm text-gray-600">
+                    <p>📦 版本：1.3.0</p>
+                    <p>📏 大小：141MB+</p>
+                    <p>🆔 BundleID：com.yjs.aimxw</p>
+                </div>
+                <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/MiniiOS/MiniiOS.github.io/main/plist/MangaBox.plist" class="install-btn block mt-4 text-center">一键安装</a>
+            </div>
+
+            <!-- 7. uzvideo -->
+            <div class="bg-white rounded-2xl p-6 card-shadow">
+                <h2 class="text-xl font-bold">uzvideo</h2>
+                <div class="mt-3 space-y-2 text-sm text-gray-600">
+                    <p>📦 版本：1.6.74</p>
+                    <p>📏 大小：44MB+</p>
+                    <p>🆔 BundleID：com.uzvideoapp2</p>
+                </div>
+                <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/MiniiOS/MiniiOS.github.io/main/plist/uzvideo.plist" class="install-btn block mt-4 text-center">一键安装</a>
+            </div>
+
+            <!-- 8. Pocket Poster -->
+            <div class="bg-white rounded-2xl p-6 card-shadow">
+                <h2 class="text-xl font-bold">Pocket Poster</h2>
+                <div class="mt-3 space-y-2 text-sm text-gray-600">
+                    <p>📦 版本：3.0</p>
+                    <p>📏 大小：13MB+</p>
+                    <p>🆔 BundleID：com.lemin.Pocket-Poster</p>
+                    <p class="text-yellow-600">ℹ️ 备注：自定义iOS动态交互壁纸</p>
+                </div>
+                <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/MiniiOS/MiniiOS.github.io/main/plist/Pocket Poster.plist" class="install-btn block mt-4 text-center">一键安装</a>
+            </div>
+
+            <!-- 9. MuteOTA -->
+            <div class="bg-white rounded-2xl p-6 card-shadow">
+                <h2 class="text-xl font-bold">MuteOTA</h2>
+                <div class="mt-3 space-y-2 text-sm text-gray-600">
+                    <p>📦 版本：1.8</p>
+                    <p>📏 大小：1MB+</p>
+                    <p>🆔 BundleID：com.MuteOTA.hbs</p>
+                    <p class="text-red-600">⚠️ 备注：支持iOS17.1-18.7.1/26.0-26.0.1，不支持iPhone17全系列</p>
+                </div>
+                <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/MiniiOS/MiniiOS.github.io/main/plist/MuteOTA.plist" class="install-btn block mt-4 text-center">一键安装</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="py-4 text-center text-gray-500 text-sm">
+        <p>© 2026 MiniiOS | 仅供学习使用</p>
+    </footer>
+</body>
+</html>
