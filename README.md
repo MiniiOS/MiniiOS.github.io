@@ -36,7 +36,7 @@
 | MangaBox | 1.3.0 | 141MB+ | com.yjs.aimxw | - |
 | uzvideo | 1.6.74 | 44MB+ | com.uzvideoapp2 | - |
 | Pocket Poster | 3.0 | 13MB+ | com.lemin.Pocket-Poster | 动态交互壁纸 |
-| MuteOTA | 1.8 | 1MB+ | com.MuteOTA.hbs | 支持iOS17.1-18.7.1 |
+| MuteOTA | 1.8 | 1MB+ | com.MuteOTA.hbs | 支持iOS17.1-18.7.1、26.0 - 26.0.1 |
 
 ## 📁 部署说明
 本仓库基于 GitHub Pages 部署
