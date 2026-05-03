@@ -1,6 +1,6 @@
 # 📱 MiniiOS - iOS 签名应用安装库
 
-基于 GitHub Pages 搭建的 iOS 已签名 IPA 应用一键安装站点，使用 `itms-services` 协议，无需电脑，手机直接安装。
+基于 GitHub Pages 搭建的 iOS 已签名 IPA 应用一键安装站点，使用 `itms-services` 协议，无需电脑，手机直接安装，支持实时安装次数统计。
 
 ## 🌐 访问地址
 **https://miniios.github.io/**
@@ -10,6 +10,20 @@
 - ✅ 响应式设计，完美适配 iPhone / iPad
 - ✅ 无广告、无付费，开源免费使用
 - ✅ 支持 iOS 17+ 系统版本
+- ✅ 实时安装次数统计，数据可视化展示
+
+## 📊 应用安装统计
+| 应用名称 | 安装次数 | 版本 | 大小 |
+|---------|----------|------|------|
+| Forward | ![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://miniios.github.io/Forward&count_bg=%230071E3&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=install&edge_flat=false) | 1.3.14 | 111MB+ |
+| MiraPlay | ![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://miniios.github.io/MiraPlay&count_bg=%230071E3&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=install&edge_flat=false) | 1.4 | 38MB+ |
+| 酷狗概念版 | ![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://miniios.github.io/KugouYouth&count_bg=%230071E3&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=install&edge_flat=false) | 2.5.5 | 83MB+ |
+| XMusic | ![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://miniios.github.io/XMusic&count_bg=%230071E3&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=install&edge_flat=false) | 1.2 | 4MB+ |
+| 动漫共和国 | ![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://miniios.github.io/Dongman&count_bg=%230071E3&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=install&edge_flat=false) | 1.0.0 | 38MB+ |
+| MangaBox | ![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://miniios.github.io/MangaBox&count_bg=%230071E3&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=install&edge_flat=false) | 1.3.0 | 141MB+ |
+| uzvideo | ![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://miniios.github.io/uzvideo&count_bg=%230071E3&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=install&edge_flat=false) | 1.6.74 | 44MB+ |
+| Pocket Poster | ![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://miniios.github.io/PocketPoster&count_bg=%230071E3&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=install&edge_flat=false) | 3.0 | 13MB+ |
+| MuteOTA | ![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://miniios.github.io/MuteOTA&count_bg=%230071E3&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=install&edge_flat=false) | 1.8 | 1MB+ |
 
 ## 📖 使用方法
 1. 用 **Safari 浏览器** 打开上方站点地址
@@ -24,8 +38,9 @@
 3. 部分应用超过 100MB，需在 **蜂窝数据/稳定WiFi** 下安装
 4. 安装失败请检查：系统版本、网络环境、证书信任状态
 5. 本项目仅用于学习交流，请勿用于商业用途
+6. 安装次数为按钮点击统计，非设备最终安装完成数据
 
-## 📦 应用清单
+## 📦 完整应用清单
 | 应用名称 | 版本 | 大小 | BundleID | 备注 |
 |---------|------|------|----------|------|
 | Forward | 1.3.14 | 111MB+ | flux.inchmade.app | - |
@@ -36,7 +51,10 @@
 | MangaBox | 1.3.0 | 141MB+ | com.yjs.aimxw | - |
 | uzvideo | 1.6.74 | 44MB+ | com.uzvideoapp2 | - |
 | Pocket Poster | 3.0 | 13MB+ | com.lemin.Pocket-Poster | 动态交互壁纸 |
-| MuteOTA | 1.8 | 1MB+ | com.MuteOTA.hbs | 支持iOS17.1-18.7.1、26.0 - 26.0.1 |
+| MuteOTA | 1.8 | 1MB+ | com.MuteOTA.hbs | 支持iOS17.1-18.7.1 |
 
 ## 📁 部署说明
-本仓库基于 GitHub Pages 部署
+本仓库基于 GitHub Pages 部署，文件结构：
+- `index.html`：主安装页面（含安装统计）
+- `plist/`：iOS 安装协议清单文件
+- `README.md`：仓库说明文档（含统计看板）
